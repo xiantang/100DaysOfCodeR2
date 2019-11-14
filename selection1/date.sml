@@ -1,14 +1,8 @@
-fun is_older(date1:int*int*int,date2:int*int*int)=
-    if (#1 date1 > #1 date2)
-    then true
-    else
-	if(#2 date1 > #2 date2)
-	then true
-	else
-	    if(#3 date1 > #3 date2)
-	    then true
-	    else
-		false
+fun is_older(dt1 : int * int * int, dt2 : int * int * int)=
+ #1 dt1 < #1 dt2 orelse 
+     #1 dt1 = #1 dt2
+        andalso #2 dt1 < #2 dt2
+            orelse #2 dt1 = #2 dt2 andalso #3 dt1 < #3 dt2;
 		   
 fun number_in_month(dates:(int*int*int) list,month:int)=
     if null dates
@@ -83,5 +77,16 @@ fun month_range(day1:int,day2:int)=
     else
 	what_month(day1) :: month_range(day1+1,day2)
 
-(*fun oldest(dates : (int*int*int) list) = *)
-    
+
+
+fun oldest(dateList : (int * int * int) list)=
+    if null dateList
+    then NONE
+    else
+        let 
+            val tmp = oldest(tl dateList)
+        in 
+            if isSome tmp andalso is_older(valOf tmp, (hd dateList))
+            then tmp 
+            else SOME (hd dateList)
+        end;
