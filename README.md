@@ -40,4 +40,4 @@ I recommend that you commit to no more than 2-3 challenges at a time, ideally 2.
 * If you like this repo and find it useful, please consider &#9733; starring it (on top right of the page) and forking it :)
 
 
-；我把我整个灵魂都给你，连同它的怪癖，耍小脾气，忽明忽暗，一千八百种坏毛病。它真讨厌，只有一点好，爱你。 --王小波
+<!--我把我整个灵魂都给你，连同它的怪癖，耍小脾气，忽明忽暗，一千八百种坏毛病。它真讨厌，只有一点好，爱你。 --王小波 -->
