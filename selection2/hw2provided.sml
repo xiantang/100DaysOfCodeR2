@@ -87,6 +87,14 @@ fun card_value(card:card) =
       | (_,Ace) => 11
       | _ => 10
 
+(* 写法很多 也都很有意思 *)
+fun all_same_color(colors) =
+    case colors of
+	[] => true
+      | _::[] =>  true
+      | c1 :: c2 :: t => card_color c1 = card_color c2
+			 andalso all_same_color(c2::t)
+
 
 
 
@@ -115,8 +123,56 @@ fun remove_card(cardlist,c,ex) =
 	   
     end
 
-	
-	
+(* 使用尾递归哈*)	
+fun sum_cards(list_card) =
+    let
+	fun helper(sum,cards) =
+	    case cards of
+		[] => sum
+	      | hd::tl => helper(sum+card_value hd,tl)
+    in
+	helper(0,list_card)
+    end
 
+
+(* 计算分数*)
+fun score(cards,goal)  =
+    let
+	val sum = sum_cards(cards)
+    in
+	abs(sum - goal) div 2
+    end
 	
+	(*
 						
+fun officiate(cards,moves,goal) =
+    let
+	fun helper(cardss,movess) =
+	    case movess of
+		[] => []
+	      | hd::tl =>
+		let
+		    val head = hd cards
+		in
+		    case hd of
+			Discard => helper(remove_card(cards,head,IllegalMove),tl)
+		      | Draw=>  hd ::  helper(remove_card(cards,x,IllegalMove),tl)
+		end
+    in
+	score(helper(cards,moves),goal)
+    end
+	
+	*)
+(*
+	fun helper(cardss,movess) =
+	    case movess of
+		[] => []
+	      | hd::tl =>
+		let
+		    val head = hd cardss
+		in
+		    case hd of
+			Discard => helper(remove_card(cards,head,IllegalMove),tl)
+		      | Draw=>  hd ::  helper(remove_card(cardss,hd,IllegalMove),tl)
+		end
+*)
