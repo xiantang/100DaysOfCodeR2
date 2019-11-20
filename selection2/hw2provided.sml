@@ -72,3 +72,51 @@ datatype move = Discard of card | Draw
 exception IllegalMove
 
 (* put your solutions for problem 2 here *)
+	      (*takes a card and returns its color (spades and clubs are black,
+diamonds and hearts are red)*)
+fun card_color(card:card)=
+    case card of
+	(Clubs,_) => Black
+      | (Diamonds,_) => Red
+      | (Hearts,_) => Red
+      | (Spades,_) => Black
+		      
+fun card_value(card:card) =
+    case card of
+	(_,Num value) => value 
+      | (_,Ace) => 11
+      | _ => 10
+
+
+
+
+fun same_card(card1:card,card2:card) =
+    card1 = card2
+		 
+fun all_except_option1(str,str_list) =
+    case str_list of
+	[] => NONE
+      | hd::tl => if same_card(hd,str) then SOME(tl)
+		  else
+		      case all_except_option1(str,tl) of
+			  NONE => NONE
+			       | SOME(x) => SOME(hd::x)
+
+
+fun remove_card(cardlist,c,ex) =
+    let
+	val except =  all_except_option1(c,cardlist)
+    in
+	if (except = SOME(cardlist))
+	then raise ex
+	else
+	    case except of
+		SOME(A) => A
+	   
+    end
+
+	
+	
+
+	
+						
