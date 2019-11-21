@@ -176,3 +176,23 @@ fun officiate(cards,moves,goal) =
 		      | Draw=>  hd ::  helper(remove_card(cardss,hd,IllegalMove),tl)
 		end
 *)
+
+fun officiate(cards,moves,goal)=
+    let
+	fun helper(cards,held,moves) =
+	    case moves of
+		[] => held
+	      | cur::tl =>
+		case  cur of
+		    Discard(x) => helper(cards,remove_card(held,x,IllegalMove),tl)
+		 |  Drew =>
+		    let
+			val hdd = hd cards
+		    in
+			helper(remove_card(cards,hdd,IllegalMove),hdd ::held,tl)
+		    end
+			
+    in
+	score(helper(cards,[],moves),goal)
+    end
+	
