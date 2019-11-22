@@ -196,3 +196,6 @@ fun officiate(cards,moves,goal)=
 	score(helper(cards,[],moves),goal)
     end
 	
+
+
+	 
