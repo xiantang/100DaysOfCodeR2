@@ -35,3 +35,20 @@ datatype typ = Anything
 	     | Datatype of string
 
 (**** you can put all your code here ****)
+fun only_capitals (strl) = List.filter (fn x=> Char.isUpper(String.sub(x,0))) strl
+
+										
+val test1 = only_capitals ["A","B","C"] = ["A","B","C"];
+
+fun longest_string1 (strl) =
+   foldl (fn (x,y) => if String.size(x) > String.size(y) then x else y) "" strl
+
+val stringList = ["Medet", "Can", "akus", "Linux", "linux", "Ubuntu", "i am Marry Poppins, You all", "I am Marry Poppins, You all"];
+
+val test2 = longest_string1 stringList = "i am Marry Poppins, You all"
+
+fun longest_string2 (strl) =
+   foldl (fn (x,y) => if String.size(x) >= String.size(y) then x else y) "" strl
+
+	 
+val test3 = longest_string2 stringList = "I am Marry Poppins, You all"
