@@ -1,5 +1,3 @@
-(* Dan Grossman, CSE341 Spring 2013, HW3 Provided Code *)
-
 exception NoAnswer
 
 datatype pattern = Wildcard
@@ -27,7 +25,18 @@ fun g f1 f2 p =
     end
 
 (**** for the challenge problem only ****)
+fun count_wildcard p =
+    g(fn ()=> 1) (fn _ => 0) p
 
+
+fun count_wild_and_variable_lengths p = g(fn ()=> 1) (fn x => String.size x) p
+
+					
+val test9 = count_wild_and_variable_lengths (TupleP [ConstP 10,TupleP [Variable "str"],ConstP 5]) = 3
+fun count_some_var(s,p) =
+    g(fn ()=>0)(fn x => if x = s then 1 else 0) p
+     
+     
 datatype typ = Anything
 	     | UnitT
 	     | IntT
@@ -68,12 +77,30 @@ fun longest_capitalized strl = ( longest_string3 o only_capitals) strl
 
 val test7 =longest_capitalized ["sss","as","ss"]  = "";
 
-fun rev_string str = ( String.implode o List.rev  o String.explode) str
+fun first_answer f xs =
+    case xs of
+	[] => raise NoAnswer
+      | hd::tl =>if isSome(f hd) then valOf(f hd) else first_answer f tl	
 
 
 
+fun all_answers f xs =
+    let
+	fun helper(f,acc,xs) =
+	    case xs of
+		[] => SOME(acc)
+	      | hd::tl=> 
+		if isSome(f hd) then helper(f, acc @ valOf(f hd),tl)
+		else
+		    NONE
+    in
+	helper(f,[],xs)
+    end
+	
+		    
 
-(* 高阶函数 *)
-(* 对里面的每个ele 使用 *)
-								    
-fun map (f,
+
+
+		
+
+    

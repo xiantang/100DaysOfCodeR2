@@ -19,3 +19,11 @@ fun filter(f,xs) =
 	    if(f x) then x :: res else res
 	end
 	    
+
+fun fold (f,acc,xs) =
+    case xs of
+	[] => acc
+     | x::xs  => fold(f,f(acc,x),xs) 
+
+
+	    
