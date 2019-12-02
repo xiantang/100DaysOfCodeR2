@@ -68,12 +68,10 @@ fun longest_capitalized strl = ( longest_string3 o only_capitals) strl
 
 val test7 =longest_capitalized ["sss","as","ss"]  = "";
 
+fun first_answer f xs =
+    case xs of
+	[] => raise NoAnswer
+      | hd::tl =>if isSome(f hd) then valOf(f hd) else first_answer f tl	;
+
+
 fun rev_string str = ( String.implode o List.rev  o String.explode) str
-
-
-
-
-(* 高阶函数 *)
-(* 对里面的每个ele 使用 *)
-								    
-fun map (f,

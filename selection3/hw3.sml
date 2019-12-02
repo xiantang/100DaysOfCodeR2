@@ -24,6 +24,65 @@ fun g f1 f2 p =
 	  | _                 => 0
     end
 
+fun check_pat p =
+    let
+	fun helper_varibles p =
+	    case p  of
+	        Variable x=>[x]
+	      | TupleP ps => List.foldl (fn (p,i) => helper_varibles p @ i) [] ps
+	      | _ => []
+
+	fun exists xs =
+	    case xs of
+		[] => true
+	      | x::[] => true
+	      | x::xs' =>if ( List.exists (fn a => if (a = x) then false else true) xs') then exists xs' else false
+    in
+	(exists o helper_varibles) p
+    end
+	
+
+fun first_answer f xs =
+    case xs of
+	[] => raise NoAnswer
+      | hd::tl =>if isSome(f hd) then valOf(f hd) else first_answer f tl	
+
+
+
+fun all_answers f xs =
+    let
+	fun helper(f,acc,xs) =
+	    case xs of
+		[] => SOME(acc)
+	      | hd::tl=> 
+		if isSome(f hd) then helper(f, acc @ valOf(f hd),tl)
+		else
+		    NONE
+    in
+	helper(f,[],xs)
+    end
+
+
+	
+fun match(var,pat) =
+    case (pat, var) of
+	(Wildcard, _) => SOME []
+      | (Variable s,_) => SOME [(s,var)]
+      | (UnitP, Unit) => SOME []
+      | (ConstP x, Const y) => if x = y then SOME [] else NONE
+      | (TupleP x,Tuple y) => if (List.length x = List.length y) then all_answers match (ListPair.zip(y,x)) else NONE
+      | (ConstructorP(s1,p),Constructor(s2,v)) => if s1 = s2 then match(v,p) else NONE 
+      | (_,_) => NONE
+
+
+fun match_first = 
+		     
+				     
+
+									      
+
+	
+
 (**** for the challenge problem only ****)
 fun count_wildcard p =
     g(fn ()=> 1) (fn _ => 0) p
@@ -77,26 +136,6 @@ fun longest_capitalized strl = ( longest_string3 o only_capitals) strl
 
 val test7 =longest_capitalized ["sss","as","ss"]  = "";
 
-fun first_answer f xs =
-    case xs of
-	[] => raise NoAnswer
-      | hd::tl =>if isSome(f hd) then valOf(f hd) else first_answer f tl	
-
-
-
-fun all_answers f xs =
-    let
-	fun helper(f,acc,xs) =
-	    case xs of
-		[] => SOME(acc)
-	      | hd::tl=> 
-		if isSome(f hd) then helper(f, acc @ valOf(f hd),tl)
-		else
-		    NONE
-    in
-	helper(f,[],xs)
-    end
-	
 		    
 
 

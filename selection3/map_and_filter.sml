@@ -26,4 +26,3 @@ fun fold (f,acc,xs) =
      | x::xs  => fold(f,f(acc,x),xs) 
 
 
-	    

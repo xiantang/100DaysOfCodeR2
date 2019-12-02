@@ -1,0 +1,619 @@
+Standard ML of New Jersey (64-bit) v110.94 [built: Fri Nov 01 16:08:14 2019]
+- List.filter
+= ;
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val it = fn : ('a -> bool) -> 'a list -> 'a list
+- String.sub
+= ;
+[autoloading]
+[autoloading done]
+val it = fn : string * int -> char
+- String.sub("aaaa",1);
+val it = #"a" : charChar.isUpper
+- Char.isUpper("a");
+stdIn:6.1-6.18 Error: operator and operand do not agree [tycon mismatch]
+  operator domain: char
+  operand:         string
+  in expression:
+    Char.isUpper "a"
+- Char.isUpper(#"a");
+val it = false : bool
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val it = () : unit
+- only_capitals(["Awq","AAA","eee"]);
+val it = ["AAA"] : strinonly_capitals(["Awq","AAA","eee"]);
+val it = ["AAA"] : string list
+- g list
+- Char.isUpper(String.sub(x,1))
+= ;
+stdIn:9.25 Error: unbound variable or constructor: x
+- Char.isUpper(String.sub("Awq",1))
+= ;
+val it = false : bool
+- String.sub("Awq",1);
+val it = #"w" : char
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val it = () : unit
+- only_capitals(["Awq","AAA","eee"]);
+val it = ["Awq","AAA"] : string list
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+hw3provided.sml:38.29-40.43 Error: operator is not a function [tycon mismatch]
+  operator: string list
+  in expression:
+    ((List.filter (fn <pat> => <exp>)) strl) only_capitals
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+hw3provided.sml:38.29-40.43 Error: operator is not a function [tycon mismatch]
+  operator: string list
+  in expression:
+    ((List.filter (fn <pat> => <exp>)) strl) only_capitals
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+hw3provided.sml:38.29-40.36 Error: operator is not a function [tycon mismatch]
+  operator: string list
+  in expression:
+    ((List.filter (fn <pat> => <exp>)) strl) only_capitals
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val it = () : unit
+- foldl;
+val it = fn : ('a * 'b -> 'b) -> 'b -> 'a list -> 'b
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+hw3provided.sml:44.16 Error: syntax error: replacing  COMMA with  AS
+[unexpected exception: Compile]
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:19.24-19.46
+             ../compiler/TopLevel/interact/evalloop.sml:45.54
+             ../compiler/TopLevel/interact/evalloop.sml:306.20-306.23
+             ../compiler/TopLevel/interact/interact.sml:65.13-65.16
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+hw3provided.sml:44.16 Error: syntax error: replacing  COMMA with  AS
+[unexpected exception: Compile]
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:19.24-19.46
+             ../compiler/TopLevel/interact/evalloop.sml:45.54
+             ../compiler/TopLevel/interact/evalloop.sml:306.20-306.23
+             ../compiler/TopLevel/interact/interact.sml:65.13-65.16
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val it = () : unit
+- val stringList = ["Medet", "Can", "akus", "Linux", "linux", "Ubuntu", "i am Marry Poppins, You all", "I am Marry Poppins, You all"];
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val it = () : unit
+- longest_string1 stringList;
+val it = "i am Marry Poppins, You all" : string
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = false : bool
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val it = () : unit
+- foldl
+= ;
+val it = fn : ('a * 'b -> 'b) -> 'b -> 'a list -> 'b
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = false : bool
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = "i am Marry Poppins, You all" : string
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = "I am Marry Poppins, You all" : string
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = true : bool
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+hw3provided.sml:65.29 Error: syntax error: inserting  RPAREN
+[unexpected exception: Compile]
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:19.24-19.46
+             ../compiler/TopLevel/interact/evalloop.sml:45.54
+             ../compiler/TopLevel/interact/evalloop.sml:306.20-306.23
+             ../compiler/TopLevel/interact/interact.sml:65.13-65.16
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+hw3provided.sml:65.6-65.10 Error: unbound variable or constructor: fold
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = true : bool
+val longest_string3 = fn : string list -> string
+val longest_string4 = fn : string list -> string
+val longest_string_helper = fn : (int * int -> bool) -> string list -> string
+val it = () : unit
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+hw3provided.sml:61.58 Error: syntax error: replacing  COMMA with  AS
+hw3provided.sml:63.59 Error: syntax error: replacing  COMMA with  AS
+[unexpected exception: Compile]
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:19.24-19.46
+             ../compiler/TopLevel/interact/evalloop.sml:45.54
+             ../compiler/TopLevel/interact/evalloop.sml:306.20-306.23
+             ../compiler/TopLevel/interact/interact.sml:65.13-65.16
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = true : bool
+val longest_string_helper = fn : (int * int -> bool) -> string list -> string
+val longest_string3 = fn : string list -> string
+val longest_string4 = fn : string list -> string
+val it = () : unit
+- o
+= ;
+stdIn:36.1 Error: expression or pattern begins with infix identifier "o"
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = true : bool
+val longest_string_helper = fn : (int * int -> bool) -> string list -> string
+val longest_string3 = fn : string list -> string
+val longest_string4 = fn : string list -> string
+val longest_capitalized = fn : string list -> string
+val it = () : unit
+-  longest_capitalized strongList;
+stdIn:38.22-38.32 Error: unbound variable or constructor: strongList
+-  longest_capitalized stringList;
+val it = "I am Marry Poppins, You all" : string
+-  longest_capitalized ["","as","ss"];
+
+uncaught exception Subscript [subscript out of bounds]
+  raised at: hw3provided.sml:38.62-38.72
+-  longest_capitalized ["","as","ss"];
+
+uncaught exception Subscript [subscript out of bounds]
+  raised at: hw3provided.sml:38.62-38.72
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+hw3provided.sml:51.83-51.89 Error: syntax error: replacing  HANDLE with  EQUALOP
+[unexpected exception: Compile]
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:19.24-19.46
+             ../compiler/TopLevel/interact/evalloop.sml:45.54
+             ../compiler/TopLevel/interact/evalloop.sml:306.20-306.23
+             ../compiler/TopLevel/interact/interact.sml:65.13-65.16
+- use "hw3provided.sml";
+[opening hw3provided.sml]
+exception NoAnswer
+datatype pattern
+  = ConstP of int
+  | ConstructorP of string * pattern
+  | TupleP of pattern list
+  | UnitP
+  | Variable of string
+  | Wildcard
+datatype valu
+  = Const of int | Constructor of string * valu | Tuple of valu list | Unit
+val g = fn : (unit -> int) -> (string -> int) -> pattern -> int
+datatype typ
+  = Anything | Datatype of string | IntT | TupleT of typ list | UnitT
+val only_capitals = fn : string list -> string list
+val test1 = true : bool
+val longest_string1 = fn : string list -> string
+val stringList =
+  ["Medet","Can","akus","Linux","linux","Ubuntu",
+   "i am Marry Poppins, You all","I am Marry Poppins, You all"] : string list
+val test2 = true : bool
+val longest_string2 = fn : string list -> string
+val test3 = true : bool
+val longest_string_helper = fn : (int * int -> bool) -> string list -> string
+val longest_string3 = fn : string list -> string
+val longest_string4 = fn : string list -> string
+val longest_capitalized = fn : string list -> string
+val it = () : unit
+-  longest_capitalized ["","as","ss"];
+
+uncaught exception Subscript [subscript out of bounds]
+  raised at: hw3provided.sml:38.62-38.72
+-  longest_capitalized ["sss","as","ss"];
+val it = "" : string
+-  longest_capitalized ["sss","as","A"];
