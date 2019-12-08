@@ -75,8 +75,11 @@ fun match(var,pat) =
       | (_,_) => NONE
 
 
-fun match_first = 
-		     
+fun match_first value xs = SOME (first_answer (fn p => match(value, p)) xs) handle NoAnswer => NONE
+
+
+
+												   
 				     
 
 									      
@@ -102,6 +105,11 @@ datatype typ = Anything
 	     | TupleT of typ list
 	     | Datatype of string
 
+
+fun typecheck_patterns (xs,pxs) =
+    
+
+			       
 (**** you can put all your code here ****)
 fun only_capitals (strl) = List.filter (fn x=> Char.isUpper(String.sub(x,0))) strl
 

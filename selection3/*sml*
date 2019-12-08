@@ -2073,4 +2073,11 @@ val it = 1 : int
 stdIn:137.54-137.61 Error: unclosed string
 - count_some_var("str",TupleP [Variable "str",Variable "str"]);
 val it = 2 : int
+- Standard ML of New Jersey (64-bit) v110.94 [built: Fri Nov 01 16:08:14 2019]
+- use "type_inference_examples.sml";
+[opening type_inference_examples.sml]
+val f = fn : int * int -> int
+val length = fn : 'a list -> int
+val f = fn : 'a * 'a * 'b -> 'a * 'a * 'b
+val it = () : unit
 - 
