@@ -192,7 +192,7 @@ object List {
   }
 
 
-  // 练习 3.24 实现hasSubsequence
+  // 练习 3.24 实现hasSubsequence 先不照顾实现
   def hasSubsequence[A](sup:List[A], sub:List[A]):Boolean = {
     @scala.annotation.tailrec
     def helper(s:List[A], b:List[A]):Boolean =(s,b) match {
@@ -206,7 +206,8 @@ object List {
     }
     helper(sup,sub)
   }
-  
+
+
   def main(args: Array[String]): Unit = {
     val value = List(1, 3, 4, 5, 4, 3)
     println(List.drop(value, 10))
