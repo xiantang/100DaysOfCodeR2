@@ -192,6 +192,22 @@ object List {
   }
 
 
+  // 练习 3.24 实现hasSubsequence
+  def hasSubsequence[A](sup:List[A], sub:List[A]):Boolean = {
+    @scala.annotation.tailrec
+    def helper(s:List[A], b:List[A]):Boolean =(s,b) match {
+      case (_,Nil) => true
+      case (Nil,_) => false
+      case (Cons(head1,tail1),Cons(head2,tail2)) =>
+        if (head1 == head2)
+          helper(tail1,tail2)
+        else
+          helper(tail1,sub)
+    }
+    helper(sup,sub)
+  }
+
+
 
   def main(args: Array[String]): Unit = {
     val value = List(1, 3, 4, 5, 4, 3)
@@ -219,5 +235,10 @@ object List {
     println(flatMap(List(1,2,3))(i=>List(i,i)))
     println(filter2(List(2,3,5,6,7,8,9))((x:Int)=>x%2==0))
     println(zipWithInt(List(1,2,3),List(4,5,6)))
+    println(hasSubsequence(List(1,2,3,4),List(1,2)))
+    println(hasSubsequence(List(1,2,3,4),List(2,3)))
+    println(hasSubsequence(List(1,2,3,4),List(4)))
+    println(hasSubsequence(List(1,2,3,4),List(1,4)))
+
   }
 }
