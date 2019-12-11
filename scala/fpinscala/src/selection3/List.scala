@@ -177,6 +177,21 @@ object List {
         else Nil
     )
 
+  // 练习 3.22 接受两个列表对应元素相加
+  def zipWithInt(a1:List[Int],a2:List[Int]):List[Int] = (a1,a2) match {
+    case (Nil,Nil) => Nil
+    case (Cons(head1,tail1),Cons(head2,tail2)) =>
+      Cons(head1+head2, zipWithInt(tail1, tail2))
+  }
+
+  // 练习 3.23 对 3.22 函数泛化
+  def zipWith[A,B](a1:List[A],a2:List[A])(f:(A,A)=>B):List[B] = (a1,a2) match {
+    case (Nil,Nil) => Nil
+    case (Cons(head1,tail1),Cons(head2,tail2)) =>
+      Cons(f(head1,head2), zipWith(tail1, tail2)(f))
+  }
+
+
 
   def main(args: Array[String]): Unit = {
     val value = List(1, 3, 4, 5, 4, 3)
@@ -203,6 +218,6 @@ object List {
     println(filter(List(2,3,5,6,7,8,9))((x:Int)=>x%2==0))
     println(flatMap(List(1,2,3))(i=>List(i,i)))
     println(filter2(List(2,3,5,6,7,8,9))((x:Int)=>x%2==0))
-
+    println(zipWithInt(List(1,2,3),List(4,5,6)))
   }
 }
