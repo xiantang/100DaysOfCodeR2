@@ -207,8 +207,7 @@ object List {
     helper(sup,sub)
   }
 
-
-
+  
   def main(args: Array[String]): Unit = {
     val value = List(1, 3, 4, 5, 4, 3)
     println(List.drop(value, 10))
