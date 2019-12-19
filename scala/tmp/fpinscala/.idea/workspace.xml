@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2743e818-8757-4a87-978d-d8b0f33f1f1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../fpinscala/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../fpinscala/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_7_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/modules/fpinscala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/modules/fpinscala-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/modules/fpinscala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/modules/fpinscala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/fpinscala.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/project/target/config-classes/$40aec557a63fc8efb728$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/project/target/config-classes/$40aec557a63fc8efb728.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/project/target/config-classes/$40aec557a63fc8efb728.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection1/Cafe.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection1/Charge.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection1/Coffee.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection1/CreditCard.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection1/reference.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection2/MyModule.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection2/go.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection2/hw1.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection3/List.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection3/Tree.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection3/list_test.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection4/Either.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection4/Option.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection4/test.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection4/test_option.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection5/Stream.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/src/selection5/lazy.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/META-INF/fpinscala.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/Cafe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/Charge$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/Charge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/Coffee$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/Coffee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/CreditCard$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/CreditCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection1/reference.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection2/MyModule$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection2/MyModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection2/go.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection2/hw1.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Branch$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Branch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Cons$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Cons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Leaf$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Leaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/List$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Nil$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Nil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/NilT$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/NilT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Tree$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection3/list_test.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Either$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Either.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Left$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Left.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/None$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/None.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Option$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Right$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Right.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Some$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/Some.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/test$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection4/test_option.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/Cons$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/Cons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/Empty$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/Empty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/Stream$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/Stream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/classes/selection5/lazy.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/default/fpinscala$sources/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/default/fpinscala$sources/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/default/fpinscala_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/default/fpinscala_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala$sources-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/default-fpinscala_2.12-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/scala-2.12/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/test/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fpinscala/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../fpinscala/target/streams/test/managedClasspath/$global/streams/export" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1V66WSy0GedK91JPzPh8OAfeT1E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Stream" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="selection5.Stream" />
+      <module name="fpinscala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selection5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Stream" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="fpinscala" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="fpinscala [file:/Users/xiantang/project/100DaysOfCodeR2/scala/tmp/fpinscala/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="fpinscala-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="2745327386" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="719916435" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../fpinscala" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../charts-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../growing-accounts" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../growing-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../growing-channel" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../growing-marketing" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../marketing-automation" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../play-samples/play-scala-slick-example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../t/growing-marketing" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../tmp/growing-marketing" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2743e818-8757-4a87-978d-d8b0f33f1f1e" name="Default Changelist" comment="" />
+      <created>1576561228655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576561228655</updated>
+      <workItem from="1576561231972" duration="236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
