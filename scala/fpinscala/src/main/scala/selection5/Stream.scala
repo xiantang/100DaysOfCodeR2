@@ -46,6 +46,7 @@ sealed trait Stream[+A] {
       case _ => res
     }
 
+
     loop(0, this)
   }
 
@@ -155,11 +156,13 @@ object Stream {
     if (as.isEmpty) empty else cons(as.head, apply(as.tail: _*))
 
 
+
   def constant[A](a: A): Stream[A] = Stream.cons(a, constant(a))
 
 
   def from(a: Int): Stream[Int] =
     Stream.cons(a, from(a + 1))
+
 
 
   def fibs(): Stream[Int] = {
