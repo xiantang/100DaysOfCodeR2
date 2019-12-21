@@ -128,13 +128,6 @@ object Stream {
     if (as.isEmpty) empty else cons(as.head, apply(as.tail: _*))
 
   def main(args: Array[String]): Unit = {
-    //    val x= Cons(()=>{
-    //      println(11)
-    //      1+1
-    //    },()=>Empty)
-    //    x.headOption
-    //    x.headOption
-    //  }
     println(Stream(1 + 1, 1, 1))
     println(Stream(1 + 1, 1, 1).toList)
     println(Stream().toList)
