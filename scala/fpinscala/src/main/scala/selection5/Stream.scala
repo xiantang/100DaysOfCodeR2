@@ -42,6 +42,7 @@ sealed trait Stream[+A] {
       case _ => res
     }
 
+
     loop(0, this)
   }
 
