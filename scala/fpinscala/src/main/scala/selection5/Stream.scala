@@ -96,6 +96,25 @@ sealed trait Stream[+A] {
     }
   }
 
+
+  def zipWith[B,C](s2: Stream[B])(f: (A,B) => C): Stream[C] =
+    Stream.unfold((this, s2)) {
+      case (Cons(h1,t1), Cons(h2,t2)) =>
+        Some((f(h1(), h2()), (t1(), t2())))
+      case _ => None
+    }
+
+  def zipAll[B](s2: Stream[B]): Stream[(Option[A],Option[B])] =
+    zipWithAll(s2)((_,_))
+
+  def zipWithAll[B, C](s2: Stream[B])(f: (Option[A], Option[B]) => C): Stream[C] =
+    Stream.unfold((this, s2)) {
+      case (Empty, Empty) => None
+      case (Cons(h, t), Empty) => Some(f(Some(h()), Option.empty[B]) -> (t(), Stream.empty[B]))
+      case (Empty, Cons(h, t)) => Some(f(Option.empty[A], Some(h())) -> (Stream.empty[A] -> t()))
+      case (Cons(h1, t1), Cons(h2, t2)) => Some(f(Some(h1()), Some(h2())) -> (t1() -> t2()))
+    }
+
   def headOption: Option[A] = {
     foldRight(None: Option[A]) {
       (a, _) =>
@@ -108,6 +127,19 @@ sealed trait Stream[+A] {
       (x, y) =>
         Stream.cons(f(x), y))
   }
+  def startsWith[A](s: Stream[A]): Boolean =
+    zipAll(s).takeWhile(_._2.isDefined) forAll {
+      case (h,h2) => h == h2
+    }
+
+  def tails: Stream[Stream[A]] =
+    Stream.unfold(this) {
+      case Empty => None
+      case s => Some((s, s drop 1))
+    } append Stream(Stream.empty)
+
+  def hasSubsequence[A](s: Stream[A]): Boolean =
+    tails exists (_ startsWith s)
 
   def _map[B](f: A => B): Stream[B] =
     Stream.unfold(this) {
