@@ -22,6 +22,11 @@ case class SimpleRNG(see:Long)extends RNG{
     }
   }
 
+  def double(rng:RNG):(Double,RNG) ={
+    val t = nonNegativeInt(rng)
+    (t._1.toDouble,t._2)
+  }
+
 }
 object RNG{
   def main(args: Array[String]): Unit = {
