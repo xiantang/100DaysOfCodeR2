@@ -151,6 +151,16 @@ object List {
     case Cons(head, tail) => Cons(f(head), map(tail)(f))
   }
 
+  // 练习 3.20 实现一个 flatMap 函数
+  def flatMap[A,B](as:List[A])(f:A=>List[B]):List[B] ={
+    def helper(as:List[A])(f:A=>List[B]):List[List[B]] = as match{
+      case Nil =>Nil
+      case Cons(head, tail) => Cons(f(head), helper(tail)(f))
+    }
+    flatten(helper(as)(f))
+  }
+
+
   // 练习 3.19 实现一个 filter 函数
   def filter[A](as: List[A])(f: A => Boolean): List[A] = as match {
     case Nil => Nil
@@ -160,14 +170,6 @@ object List {
       else value
   }
 
-  // 练习 3.20 实现一个 flatMap 函数
-  def flatMap[A,B](as:List[A])(f:A=>List[B]):List[B] ={
-    def helper(as:List[A])(f:A=>List[B]):List[List[B]] = as match{
-      case Nil =>Nil
-      case Cons(head, tail) => Cons(f(head), helper(tail)(f))
-    }
-    flatten(helper(as)(f))
-  }
 
   // 练习 3.21 使用 flatMap 实现 filter
   def filter2[A](as: List[A])(f: A => Boolean): List[A] =
