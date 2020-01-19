@@ -1,5 +1,7 @@
 package fpscala
 
+import java.util.concurrent.ForkJoinWorkerThread
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
 
@@ -16,6 +18,9 @@ object test extends App {
     Future {
       println("starting Future: " + n)
       blocking {
+        val t  = Thread.currentThread()
+        println(t)
+        println(t.asInstanceOf[ForkJoinWorkerThread].getPool)
         Thread.sleep(3000)
       }
       println("ending Future: " + n)
